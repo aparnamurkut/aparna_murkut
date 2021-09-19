@@ -1,0 +1,145 @@
+
+header{
+        background-size: cover;
+        background-position: center;
+        background-image: url(C:/Users/win/Desktop/1.jpg);
+        height: 110vh;
+}
+
+#hed1{
+      font-size: 40px;
+      text-shadow: 4px 2px 2px lightpink;
+}
+
+#hed2{
+      text-align: center;
+      color: black;
+      font-style: oblique;
+      text-shadow: 4px 2px 2px lightblue;
+}
+
+#par1{
+      color:white;
+      text-decoration: underline;
+      font-size: 28px;
+      margin-left: 25px;
+}
+
+#para2{
+      color:white; font-size: 20px;
+      white-space: pre;
+      text-align: justify;
+}
+
+#para3{
+       color:white;
+       font-size: 28px;
+       text-decoration: underline;
+       margin-left: 25px
+}
+
+#para4{
+      color:white;
+      font-size: 20px;
+      text-align: justify;
+      margin-left: 20px;
+      margin-right: 20px;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+ul li a{
+      text-decoration: underline;
+      font-weight: bold;
+      margin-right: 5px;
+      color: black;
+      background-color: lightpink;
+      padding: 5px 20px;
+      border: 3px solid honeydew;
+      transition: 0.6s ease;
+} 
+
+ul li a:hover{
+              background-color: lightskyblue;
+              color: black;
+}
+
+.main{
+      max-width: 1200px;
+      margin: auto;
+}
+
+.style{
+      text-align: left;
+}
+
+.icon{
+    float: right;
+    position: static;
+    margin-right: 10%;
+    margin-left: 40px;
+    margin-top: 47%;
+    overflow: auto;
+}
+
+/* Style all font awesome icons */
+.fa {
+     font-size: 45px;
+     font-weight: bold;
+     width: 30px;
+     padding: 20px;
+     font-size: 30px;
+     text-align: center;
+     text-decoration: none;
+     margin: 5px 5px;
+     color: white;
+     border-radius: 30%;
+     margin-left: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity:0.6;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+              background: #3B5998;
+              color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+               background: #fb3958;
+               color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+             background: #1DA1F2;
+             color: white;
+}
+
+/* Linkedin */
+.fa-linkedin {
+              background: #007bb5;
+              color: white;
+}
+
+/* Google */
+.fa-google {
+              background: #3B5998;
+              color: white;
+}
+
+/* youtube */
+.fa-youtube {
+              background: #FF0000;
+              color: white;
+}

@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 18, 2019, 5:43:08 PM
+    Author     : Administrator
+*/
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+        background-image:url(../pictures/www.png);
+          width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+}
+
+.loginBox{
+    width : 320px;
+    height: 500px;
+    background: steelblue;
+    color: white;
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 20px;
+    
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left: calc(50% - 50px);
+    
+}
+.h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginBox p{
+    margin: 0;
+    padding: 0;
+    
+    font-size: 20px;
+    
+}
+.loginBox input[type="text"]{
+background-color: white ;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    height: 30px;
+    color: black;
+    font-size: 14px;
+    
+    
+}
+.loginBox input[type="password"]
+{
+    background-color: white ;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    height: 30px;
+    color: black;
+    font-size: 14px;
+}
+
+button{
+    width: 100%;
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #00b894;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+   
+}
+
+.btnone{
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    border:none;
+    outline: none;
+   
+    background: #00b894;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 95px;
+}
+.forget{
+
+    margin-left: 20px;
+    text-decoration: none;
+     color: white;
+}

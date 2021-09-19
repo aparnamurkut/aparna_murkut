@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Signup Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  <!--   for font-->
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/signup.css">
+    
+  
+  
+  
+  
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.0.0/sweetalert.min.js"></script>
+    
+    </head>
+    <body>
+        <nav>
+      <div class="logo">
+                <h3 style="color:black">Event Management</h3>
+            </div>
+            <ul class="navlink" style="font-size: 16px;">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#location">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+   
+        </nav><br/><br>
+        
+<div class="container" style="margin-left: 35%";>
+
+<div class="card bg-light">
+<article class="card-body mx-auto" style="max-width: 400px; font-size: 24px">
+	<h1 class="card-title mt-3 text-center" style="font-size: 40px; color:purple; text-shadow: 3px 3px 2px lightskyblue"> <i> <marquee>Create Account </marquee> </i> </h1> 
+	<p class="text-center">Get started with your free account</p>
+	<p>
+		<a href="" class="btn btn-block btn-twitter" style="font-size: 16px"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+		<a href="" class="btn btn-block btn-facebook" style="font-size: 16px"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+	</p>
+	<p class="divider-text">
+            <span class="bg-light" style="font-size: 16px">OR</span><br>
+    </p>
+	<form>
+	<div class="form-group input-group" >
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="" class="form-control" id="name" placeholder="Full name" type="text" style="font-size: 16px">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+		 </div>
+        <input name="" class="form-control" id="email" placeholder="Email address" type="email" style="font-size: 16px">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+		</div>
+                  
+	
+    	<input name="" class="form-control" id="number" placeholder="Phone number" type="text" style="font-size: 16px">
+    </div> <!-- form-group// -->
+
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" id="pwd" placeholder="Create password" type="password" style="font-size: 16px">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Repeat password" type="password" style="font-size: 16px">
+    </div> <!-- form-group// -->                                      
+    <div class="form-group">
+        <button type="button" class="btn btn-primary btn-block" id="submit" style="font-size: 14px" > Create Account  </button>
+
+    </div> <!-- form-group// -->      
+    <p class="text-center" style="font-size: 16px" >Have an account? <a href="login.html">Log In</a> </p>                                                                 
+</form>
+</article>
+</div> <!-- card.// -->
+
+</div> 
+<!--container end.//-->
+<br><br>
+        <script>
+            $("#submit").click(function(){
+            var name =$("#name").val();
+            var mail =$("#email").val();
+            var no =$("#number").val();
+            var pwd =$("#pwd").val(); 
+            if(name =='' || mail =='' || no =='' || pwd =='' ){
+                    swal({
+                        title: "Fields Empty!",
+                        text: "Please check the missing fields",
+                        icon: "warning",
+                         });
+                }else{
+                swal("Register successful ", "Account Created Successfully", "success").then(function(){
+                    window.location = "login.html"
+                });
+                }
+            });
+
+
+                
+            
+        </script>
+</article>
+    </body>
+</html>

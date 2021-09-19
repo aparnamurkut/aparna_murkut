@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Booking Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  <!--   for font-->
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+
+  
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.0.0/sweetalert.min.js"></script>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.0.0/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="css/booking_form.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h3>Event Management</h3>
+            </div>
+            <ul class="navlink" style="font-size: 16px;">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#location">Contact</a></li>
+                <li><a href="homePage.html">Logout</a></li>
+            </ul>
+        </nav>
+     <div class="container">
+
+  <div class="card bg-light" style="margin-top: 50px; width: 40%;margin-left: 30%;">
+<h3 class="card-title mt-3 text-center">Booking Form</h3>
+
+<form>
+    <div class="form-group input-group" >
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+         </div>
+        <input name="name" class="form-control"  placeholder="Enter Full Name" type="text" style="font-size: 16px; width: 100%;">
+    </div>
+              
+
+    <div class="form-group input-group" >
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fas fa-envelope"></i> </span>
+         </div>
+        <input name="email" class="form-control"  placeholder="Enter Email Address" type="text" style="font-size: 16px; width: 100%;">
+    </div>
+    
+    
+    <div class="form-group input-group" >
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="  far fa-envelope"></i> </span>
+         </div>
+        <input name="add" class="form-control"  placeholder="Enter Address" type="text" style="font-size: 16px; width: 100%;">
+    </div>
+        <div class="form-group input-group" >
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fas fa-address-card"></i> </span>
+         </div>
+        <input name="ladd" class="form-control"  placeholder="Enter Event Location Address" type="text" style="font-size: 16px; width: 100%;">
+    </div>
+    
+    <div class="form-group input-group" >
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="  fas fa-phone"></i> </span>
+         </div>
+        <input name="num" class="form-control"  placeholder="Enter Phone Number" type="text" style="font-size: 16px; width: 100%;">
+    </div>
+    
+    <label style="font-size: 14px">Enter Event Date</label>
+        <div class="form-group input-group" >
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fas fa-calendar-alt"></i> </span>
+         </div>
+            <input name="date" class="form-control"  type="date"  style="font-size: 16px; width: 100%;">
+    </div>
+    
+    <label style="font-size: 14px">Enter Event Time</label>
+    <div class="form-group input-group" >
+        
+       
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="  fas fa-clock"></i> </span>
+         </div>
+            <input name="time" class="form-control"  type="time"  style="font-size: 16px; width: 100%;">
+    </div><br><br>
+    <button class="btn btn-block btn-outline-primary" type="button" id="submit" style="font-size: 16px;">Book</button>
+    
+
+</form> 
+
+</div> <!-- card.// -->
+
+</div> 
+           <script>
+            $("#submit").click(function(){
+            var name =$("#name").val();
+            var mail =$("#email").val();
+            var add =$("#add").val();
+            var ladd =$("#ladd").val();
+            var no =$("#num").val();
+            var date =$("#date").val();
+            var time =$("#time").val();
+           
+            if(name ==="" || mail ==="" || add ==="" || ladd ==="" || no==="" || date==="" || time===""){
+                    swal({
+                        title: "Fields Empty!",
+                        text: "Please check the missing fields",
+                        icon: "warning"
+                         });
+                }else{
+                swal("Booking Done successfully", "", "success").then(function(){
+                    window.location = "index.html";
+                });
+                }
+            });
+        </script><br><br> <br><br>
+      
+<div class="mt-5 pt-5 pb-5 footer">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5 col-xs-12 about-company">
+      <h2>Event Management</h2>
+      <p class="pr-5 text-white-50" style="text-align: justify; font-size: 16px;">Event management is the organization which handles the all type of event. We are a full service event management company offering turn key event planning and event production services for B2B corporate events across all industries.Our clients include major fortune 500 companies based in India and abroad. </p>
+      <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+    </div>
+
+      <div class="col-lg-3 col-xs-12 links">
+        <h3 class="mt-lg-0 mt-sm-3" style="text-align: center;">Our Services</h3>
+        <ul class="m-0 p-0" style="text-align: center; list-style: none;font-size: 16px;">
+          <li> Wedding Events </li>
+          <li> Birthday Events</li>
+          <li> Professional Events </li>
+          <li> Personal Events</li>
+          <li> Educational Events</li>
+        </ul>
+    </div>
+      
+      <div class="col-lg-4 col-xs-12 location" id="location">
+      <h4 class="mt-lg-0 mt-sm-4" style="font-size: 16px;">Location</h4>
+      <p style="font-size: 16px;">22, Lorem ipsum dolor, consectetur adipiscing</p>
+      <p class="mb-0" style="font-size: 16px;"><i class="fa fa-phone mr-3" ></i>(541) 754-3010</p>
+      <p style="font-size: 16px;"> Contact Us :  <i class="fa fa-envelope-o mr-3"></i>eventmanagement@gmail.com</p>
+      <p style="font-size: 16px;">Phone number  :  +91 9604021656</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col copyright">
+        <p class=""><small class="text-white-50" style="font-size: 12px;">© 2020. All Rights Reserved.</small></p>
+    </div>
+  </div>
+</div>
+</div>
+    </body>
+</html>

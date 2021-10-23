@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: unset;
+}
+.nav{
+    width: 100%;
+    background-color: #0009;
+    color: #fff;
+}
+.menu_bar{
+    line-height: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+
+.nav .menu_bar{
+    float: right ;
+    margin-right: 1px;
+}
+.nav .menu_bar .menu_items{
+    list-style-type: none;
+    display: inline-block;
+    transition: 1s;
+}
+.nav .menu_bar .menu_items:hover{
+    background-color: lightpink;
+    border-radius: 60px;
+}
+.nav .menu_bar  a{    
+    text-decoration: none;
+    color: #fff;   
+    padding: 30px;
+    line-height: 60px;
+}
+.sub_bar{
+    display: inline-block;
+    text-transform: none;
+    display: block;
+    position: relative;
+    width: 220px;
+    background-color: rgba(0,0,0,0.8);
+}
+.menu_bar ul li:hover .sub_bar{
+    display: inline-block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu_bar ul li:hover .sub_bar ul{
+    display: inline-block;
+    margin: 10px;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider figure
+{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 80s infinite;
+}
+.slider figure div
+{
+    float: left;
+    width: 20%;
+}
+.slider figure img
+{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+@keyframes animate{
+    0%{left: 0%;}
+    20%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -300%;}
+    80%{left: -400%;}
+}
+
+ .container {
+  position: relative;
+}
+image{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*footer  */
+
+.footer{
+    background: GREY;
+    color: black;
+    font-size: 14px;
+    margin: auto;
+    font-family: sans-serif;
+    
+   }
+
+  .footer p{
+      color: black;
+  }
+
+  .footer h3{
+      color: black;
+      margin-bottom: 20px;
+  }
+
+  .footer-col-1 , .footer-col-2,  .footer-col-3{
+      min-width: 10px;
+      margin-bottom: 20px;
+  }
+
+  .footer-col-2{
+      flex-basis: 30px;
+      align-items: center;
+      
+  }
+  
+  .footer-col-2{
+    flex: 1px;
+    
+    align-items: center;
+}
+.footer-col-2 img{
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding-left: 30%;
+}
+
+.footer-col-3 ul li{
+    flex-basis: 20%;
+    text-align: center;
+    display: inline-block;
+    margin: 30px;
+    
+
+}
+ul{
+    list-style-type: none;
+   
+  }
+
+  .footer-col-3{
+    
+    
+    background-color: black;
+     color: white;
+    
+     
+  }
+
+  .footer-col-3 h3{
+      align-items: center;
+      padding-left: 35%;
+  }
+
+.app-logo{
+
+    margin-top: 20px;
+    margin-right: 50%;
+    
+    
+
+}
+
+.app-logo img{
+    width: 140px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.footer hr{
+    border:none;
+    background: grey;
+    height: 1px;
+    margin: 20px 0;
+
+
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+.container{
+    margin: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+    .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram{ 
+      color: white;
+    background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 90%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  
+  color:white;
+    }
+  .fa-whatsapp {
+    background: #25D366;
+    color: white;
+ 
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
